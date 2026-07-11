@@ -7,42 +7,38 @@ const skillCategories = [
   },
   {
     title: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS"],
+    items: ["Vue.js", "Next.js", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+    items: ["Node.js", "Express", "Supabase"],
   },
   {
     title: "DevOps",
-    items: ["Docker", "AWS", "CI/CD", "Linux", "Nginx"],
+    items: ["Docker", "CI/CD", "Linux", ],
   },
   {
     title: "Tools",
-    items: ["Git", "Figma", "VS Code", "Webpack", "ESLint"],
+    items: ["Git", "Figma", "VS Code", "Postman"],
   },
 ];
 
 const iconPaths: Record<string, string> = {
-  React: "/icons/react-svgrepo-com.svg",
+  "Vue.js": "/icons/vue-svgrepo-com.svg",
   "Next.js": "/icons/next-dot-js-svgrepo-com.svg",
   TypeScript: "/icons/typescript-svgrepo-com.svg",
   "Tailwind CSS": "/icons/tailwindcss-svgrepo-com.svg",
   "Node.js": "/icons/node-js-svgrepo-com.svg",
   Express: "/icons/express-svgrepo-com.svg",
   Python: "/icons/python-svgrepo-com.svg",
-  PostgreSQL: "/icons/postgresql-svgrepo-com.svg",
-  MongoDB: "/icons/mongodb-svgrepo-com.svg",
+  Supabase: "/icons/supabase-svgrepo-com.svg",
   Docker: "/icons/docker-svgrepo-com.svg",
-  AWS: "/icons/aws-svgrepo-com.svg",
   "CI/CD": "/icons/cicd-svgrepo-com.svg",
   Linux: "/icons/linux-svgrepo-com.svg",
-  Nginx: "/icons/nginx-svgrepo-com.svg",
   Git: "/icons/git-svgrepo-com.svg",
   Figma: "/icons/figma-svgrepo-com.svg",
   "VS Code": "/icons/vscode-svgrepo-com.svg",
-  Webpack: "/icons/webpack-svgrepo-com.svg",
-  ESLint: "/icons/eslint-svgrepo-com.svg",
+  Postman: "/icons/postman-svgrepo-com.svg",
   Java: "/icons/java-svgrepo-com.svg",
 };
 
