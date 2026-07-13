@@ -20,18 +20,9 @@ const projects: Project[] = [
     url: "https://github.com/BunyawatCharnwechsart/Easycook",
     demo: "https://easycook-three.vercel.app/app/main",
     desc: "A recipe discovery and meal planning platform built with Vue and TypeScript.",
-    tags: ["Vue", "TypeScript"],
+    tags: ["Vue", "TypeScript", "Express", "Cloudflare D1"],
   },
-  {
-    title: "Weather Dashboard",
-    desc: "Real-time weather visualization with interactive maps, forecasts, and historical data.",
-    tags: ["React", "D3.js", "OpenWeather API", "Redis"],
-  },
-  {
-    title: "Social Feed",
-    desc: "Scalable social media platform with feeds, likes, comments, and real-time notifications.",
-    tags: ["Next.js", "Prisma", "WebSocket", "AWS S3"],
-  },
+
 ];
 
 export default function ProjectsPage() {

@@ -26,20 +26,44 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="relative w-14 h-7 rounded-full bg-gray-200 dark:bg-white/10 border border-gray-300 dark:border-white/10 cursor-pointer transition-all duration-300"
-      aria-label="Toggle dark mode"
+      className="cursor-pointer transition-all duration-300"
+      aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      <span
-        className={`absolute top-0.5 w-6 h-6 rounded-full bg-white dark:bg-black shadow-sm dark:shadow-none transition-all duration-300 flex items-center justify-center ${
-          dark ? "left-0.5" : "left-[calc(100%-1.625rem)]"
-        }`}
-      >
-        <span
-          className={`w-2 h-2 rounded-full transition-all duration-300 ${
-            dark ? "bg-neon shadow-[0_0_6px_#1EF4A8]" : "bg-gray-400"
-          }`}
-        />
-      </span>
+      {dark ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#1EF4A8"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="w-5 h-5 transition-all duration-300 hover:rotate-45"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.93 4.93 1.41 1.41" />
+          <path d="m17.66 17.66 1.41 1.41" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.34 17.66-1.41 1.41" />
+          <path d="m19.07 4.93-1.41 1.41" />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#6b7280"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="w-5 h-5 transition-all duration-300 hover:-rotate-12"
+        >
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        </svg>
+      )}
     </button>
   );
 }
